@@ -75,8 +75,34 @@ namespace clase2610
                 new {Nombre = "Concepción", Posicion = 8}
             };
 
+            Console.WriteLine("ACA COMIENZO el 28/10");//Aquí quedamos el 26/10
+            Console.WriteLine(arrayNumeros.Length);
+            //iteramos la lista de números
+            for (int i = 0; i < arrayNumeros.Length; i++) {
+                Console.WriteLine(arrayNumeros[i]);
+            }
 
-            //for (int i = 0) { } //Aquí quedamos el 26/10
+            //iteramos la lista de consolas
+            for (int i = 0; i < listaDeConsolas.Length; i++)
+            {
+                Console.WriteLine(listaDeConsolas[i]);
+            }
+
+            //iteramos la lista de números
+            foreach (int numerito in arrayNumeros)
+            {
+                Console.WriteLine(numerito);
+            }
+
+            //iteramos la lista de consolas
+            int indice = 0;
+            foreach(Videojuego elemento in listaDeConsolas)
+            {
+                Console.WriteLine(elemento.Nombre);
+                indice++;
+            }
+
+
         }
     }
 }
